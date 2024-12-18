@@ -14,7 +14,7 @@
   min-inline-size: 320px;
   min-block-size: 100dvb;
   font-family: var(--main-font, fantasy);
-  font-variation-settings: "wght" var(--main-font-text);
+  font-variation-settings: "wght" var(--main-font-text, 400);
   color: var(--text-color, #000);
   background-color: var(--bg-color, #fff);
   background-image: var(--background-image, none);
@@ -48,8 +48,8 @@
 
 .card {
   margin-inline: auto;
-  background-color: var(--bg-color, #ffffff);
-  border: 2px solid var(--text-color, #000000);
+  background-color: var(--bg-color, #fff);
+  border: 2px solid var(--text-color, #000);
   max-inline-size: 696px;
 }
 
@@ -146,7 +146,7 @@
   overflow: hidden;
   z-index: 1;
   border: 2px solid var(--text-color, #000);
-  background-color: var(--background-color, #ffffff);
+  background-color: var(--background-color, #fff);
   padding: 10px 34px;
   cursor: pointer;
   font-size:  14px;
@@ -202,7 +202,7 @@
 
 .button__text,
 .floppy {
-  color: var(--button, #ffffff);
+  color: var(--button, #fff);
   mix-blend-mode: difference;
 }
 
@@ -229,7 +229,7 @@
 }
 
 .modal::backdrop {
-  background-color: var(--text, #000000);
+  background-color: var(--text, #000);
   opacity: 0.75;
 }
 
@@ -285,6 +285,11 @@
 
 /* Адаптив */
 @media (width <= 375px) {
+  
+  .label {
+    right: 11px;
+    top: 23px;
+  }
 
   .card_content {
     padding: 25px  25px 0 25px;
