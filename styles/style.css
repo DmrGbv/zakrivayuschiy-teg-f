@@ -279,13 +279,13 @@
   filter: saturate(110%);
 }
 
-.filter_invert {
-  filter: invert(70%);
+.filter_multy {
+  filter: invert(70%) hue-rotate(145deg);
 }
 
 /* Адаптив */
 @media (width <= 375px) {
-  
+
   .label {
     right: 11px;
     top: 23px;
