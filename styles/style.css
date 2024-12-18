@@ -56,9 +56,13 @@
 .main {
   display: grid;
   justify-items: center;
-  gap: 57px;
+  gap: 50px;
   padding-block-end: 55px;
 }
+
+/*.main:nth-last-child(2) {
+  gap: 45px;
+}*/
 
 .card_list {
   display: grid;
@@ -127,7 +131,7 @@
   cursor: pointer;
   background-color: transparent;
   appearance: none;
-  transition: border 0.3s ease-in-out;
+  transition: border 0.3s ease;
 }
 
 .card__icon-button:focus {
@@ -153,7 +157,7 @@
   font-family: var(--accent-font, sans-serif);
   text-transform: inherit;
   text-align: center;
-  transition: box-shadow 0.3s ease-in-out;
+  transition: box-shadow 0.3s ease;
 }
 .button:focus {
   outline: none;
@@ -186,8 +190,8 @@
 }
 
 .like-icon {
-  block-size: 36px;
-  inline-size: 36px;
+  block-size: 34px;
+  inline-size: 38px;
 }
 
 .save {
@@ -195,9 +199,8 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 18px;
-  padding: 15px 20px;
-  margin-top: -7px;
+  gap: 4px;
+  padding: 15px 21px;
 }
 
 .button__text,
@@ -306,7 +309,7 @@
     display: flex;
     flex-direction: column;
     padding: 15px 20px;
-    
+    gap: 7px;
   }
 
   .modal {
